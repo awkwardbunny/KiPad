@@ -1,0 +1,118 @@
+{
+    "keyboard_name": "KiPad v3.1",
+    "maintainer": "awkwardbunny",
+    "manufacturer": "MEIRLabs",
+    "url": "",
+    "bootloader_instructions": "",
+    "tags": [],
+
+    "bootloader": "atmel-dfu",
+    "processor": "atmega32u2",
+
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "debug": true,
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": true,
+        "rgblight": false,
+        "rgb_matrix": true 
+    },
+
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x4B52",
+        "vid": "0x4248"
+    },
+
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "rows": ["D1", "C6", "B5", "B7", "D6", "B3"],
+        "cols": ["B4", "B6", "C7", "D7"]
+    },
+
+    "rgb_matrix": {
+        "led_count": 21,
+        "animations": {
+            "solid_color": true,
+            "breathing": true,
+            "cycle_all": true
+        },
+        "driver": "ws2812",
+        "default": {
+            "animation": "solid_color"
+        },
+        "layout": [
+            {"matrix": [0, 0], "x": 0, "y": 0, "flags": 4},
+            {"matrix": [0, 1], "x": 1, "y": 0, "flags": 4},
+            {"matrix": [0, 2], "x": 2, "y": 0, "flags": 4},
+            {"matrix": [0, 3], "x": 3, "y": 0, "flags": 4},
+
+            {"matrix": [1, 0], "x": 0, "y": 1, "flags": 4},
+            {"matrix": [1, 1], "x": 1, "y": 1, "flags": 4},
+            {"matrix": [1, 2], "x": 2, "y": 1, "flags": 4},
+            {"matrix": [1, 3], "x": 3, "y": 1, "flags": 4},
+
+            {"matrix": [2, 0], "x": 0, "y": 2, "flags": 4},
+            {"matrix": [2, 1], "x": 1, "y": 2, "flags": 4},
+            {"matrix": [2, 2], "x": 2, "y": 2, "flags": 4},
+            {"matrix": [2, 3], "x": 3, "y": 2, "flags": 4},
+
+            {"matrix": [3, 0], "x": 0, "y": 3, "flags": 4},
+            {"matrix": [3, 1], "x": 1, "y": 3, "flags": 4},
+            {"matrix": [3, 2], "x": 2, "y": 3, "flags": 4},
+
+            {"matrix": [4, 0], "x": 0, "y": 4, "flags": 4},
+            {"matrix": [4, 1], "x": 1, "y": 4, "flags": 4},
+            {"matrix": [4, 2], "x": 2, "y": 4, "flags": 4},
+            {"matrix": [4, 3], "x": 3, "y": 4, "flags": 4},
+
+            {"matrix": [5, 0], "x": 0, "y": 5, "flags": 4},
+            {"matrix": [5, 2], "x": 2, "y": 5, "flags": 4}
+        ]
+    },
+
+    "ws2812": {
+      "pin": "C5"
+    },
+
+    "bootmagic": {
+        "enabled": true,
+        "matrix": [0, 0]
+    },
+
+    "layouts": {
+        "LAYOUT_numpad_6x4": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [1, 3], "x": 3, "y": 1},
+
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2, "h": 2},
+
+                {"matrix": [3, 0], "x": 0, "y": 3},
+                {"matrix": [3, 1], "x": 1, "y": 3},
+                {"matrix": [3, 2], "x": 2, "y": 3},
+
+                {"matrix": [4, 0], "x": 0, "y": 4},
+                {"matrix": [4, 1], "x": 1, "y": 4},
+                {"matrix": [4, 2], "x": 2, "y": 4},
+                {"matrix": [4, 3], "x": 3, "y": 4, "h": 2},
+
+                {"matrix": [5, 0], "x": 0, "y": 5, "w": 2},
+                {"matrix": [5, 2], "x": 2, "y": 5}
+            ]
+        }
+    }
+}
